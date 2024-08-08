@@ -1,0 +1,93 @@
+.clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+    width: 110px;
+    background-color: transparent;
+    position: relative;
+  }
+  .title-city {
+    text-align: center;
+  
+  }
+  
+  .close-btn {
+    position: absolute;
+    bottom: 110px;
+    left: 103px;
+    cursor: pointer;
+  }
+  
+  .close-btn::after,
+  .close-btn::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background-color: red;
+  }
+  
+  .close-btn::after {
+    transform: rotate(45deg);
+  }
+  
+  .close-btn::before {
+    transform: rotate(-45deg);
+  }
+  
+  .clock {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #333;
+    border-radius: 50%;
+  }
+  
+  .hour-hand,
+  .minute-hand,
+  .second-hand {
+    position: absolute;
+    transform-origin: 50% 100%;
+  }
+  .hour-hand {
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -2.5px;
+    width: 5px;
+    height: 30px;
+    background-color: black;
+  }
+  
+  .minute-hand {
+    top: 50%;
+    left: 50%;
+    margin-top: -22.5px;
+    margin-left: -2.5px;
+    width: 5px;
+    height: 45px;
+    background-color: green;
+  }
+  
+  .second-hand {
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -1px;
+    width: 2px;
+    height: 50px;
+    background-color: red;
+  }
+  
+  
+  .center-circle {
+    width: 12px;
+    height: 12px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

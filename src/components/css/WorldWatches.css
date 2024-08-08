@@ -1,0 +1,7 @@
+.clock-wrapper-container {
+    display: flex;
+}
+
+.clock-wrapper-container > aside:nth-child(n+2) {
+    margin-left: 20px;
+}
